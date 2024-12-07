@@ -35,10 +35,11 @@
         const images = [];
         const canvas = document.getElementById("frame");
         const context = canvas.getContext("2d");
-    
+        
+        const repoName ="/canvas-practice"
         function preloadImages() {
             for (let i = 1; i <= frames.MaxIndex; i++) {
-                const imgUrl = `./compressed-frames/frame_${i.toString().padStart(4, "0")}.png`;
+                const imgUrl = `${repoName}/compressed-frames/frame_${i.toString().padStart(4, "0")}.png`;
                 const img = new Image();
                 img.src = imgUrl;
     
